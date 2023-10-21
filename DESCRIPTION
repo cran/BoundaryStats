@@ -1,7 +1,7 @@
 Package: BoundaryStats
 Type: Package
 Title: Boundary Overlap Statistics
-Version: 2.0.1
+Version: 2.1.1
 Authors@R: c(
   person(given = 'Amy',
         family = 'Luo',
@@ -24,9 +24,9 @@ Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2023-06-26 23:26:23 UTC; AmyLuo
+Packaged: 2023-10-21 04:23:46 UTC; AmyLuo
 Author: Amy Luo [aut, cre, cph] (<https://orcid.org/0000-0002-9197-4673>),
   Elizabeth Derryberry [ths] (<https://orcid.org/0000-0002-8248-9748>)
 Maintainer: Amy Luo <aluo@vols.utk.edu>
 Repository: CRAN
-Date/Publication: 2023-06-28 14:00:02 UTC
+Date/Publication: 2023-10-21 05:30:02 UTC

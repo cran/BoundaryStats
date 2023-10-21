@@ -6,13 +6,14 @@
 #' @param x A SpatRaster object.
 #' @return A SpatRaster object with boundary elements.
 #' 
-#' @examples
-#' data(grassland)
+#' @examples \donttest{
+#' #' data(grassland)
 #' grassland <- terra::rast(grassland_matrix, crs = grassland_crs)
 #' terra::ext(grassland) <- grassland_ext
 #' 
 #' simulation <- gauss_random_field_sim(grassland)
 #' terra::plot(simulation)
+#' }
 #'
 #' @author Amy Luo
 #' @references
@@ -78,8 +79,6 @@ gauss_random_field_sim <- function (x) {
 
   terra::ext(x_sim) <- terra::ext(x)
   terra::crs(x_sim) <- terra::crs(x)
-
-  terra::plot(x_sim)
 
   # if input values are all integers, make all simulated values integers
   if (all(na.omit(terra::values(x)) %% 1 == 0)) {terra::values(x_sim) <- round(terra::values(x_sim))}
